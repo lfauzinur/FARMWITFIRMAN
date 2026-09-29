@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 export default async function AdminTentangPage({ params }: { params: Promise<{ lang: string }> }) {
-  await params; // Await params to avoid dynamic route errors
+  const { lang } = await params;
   const profileRaw = await getCompanyProfile();
   const profile = JSON.parse(JSON.stringify(profileRaw)); // Ensure it's a plain JSON object
   const teamMembers = await getTeamMembers();
