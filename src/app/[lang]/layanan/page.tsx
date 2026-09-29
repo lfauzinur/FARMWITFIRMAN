@@ -8,6 +8,7 @@ import { ScrollReveal } from '@/components/ui/ScrollReveal';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { Button } from '@/components/ui/Button';
 import { CTASection } from '@/components/home/CTASection';
+import { Wheat, Handshake, GraduationCap, Award, Lightbulb, TrendingUp, Users } from 'lucide-react';
 import styles from './services.module.css';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
@@ -24,7 +25,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ lang:
   const services = [
     {
       id: 'produk',
-      icon: '🌾',
+      Icon: Wheat,
       title: dict.services.service1Title,
       description: dict.services.service1Desc,
       features: [
@@ -36,7 +37,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ lang:
     },
     {
       id: 'konsultasi',
-      icon: '🤝',
+      Icon: Handshake,
       title: dict.services.service2Title,
       description: dict.services.service2Desc,
       features: [
@@ -48,7 +49,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ lang:
     },
     {
       id: 'pelatihan',
-      icon: '🎓',
+      Icon: GraduationCap,
       title: dict.services.service3Title,
       description: dict.services.service3Desc,
       features: [
@@ -61,10 +62,10 @@ export default async function ServicesPage({ params }: { params: Promise<{ lang:
   ];
 
   const whyUs = [
-    { icon: '🏆', title: dict.servicesPage.why1Title, description: dict.servicesPage.why1Desc },
-    { icon: '💡', title: dict.servicesPage.why2Title, description: dict.servicesPage.why2Desc },
-    { icon: '📈', title: dict.servicesPage.why3Title, description: dict.servicesPage.why3Desc },
-    { icon: '🤝', title: dict.servicesPage.why4Title, description: dict.servicesPage.why4Desc },
+    { Icon: Award, title: dict.servicesPage.why1Title, description: dict.servicesPage.why1Desc },
+    { Icon: Lightbulb, title: dict.servicesPage.why2Title, description: dict.servicesPage.why2Desc },
+    { Icon: TrendingUp, title: dict.servicesPage.why3Title, description: dict.servicesPage.why3Desc },
+    { Icon: Users, title: dict.servicesPage.why4Title, description: dict.servicesPage.why4Desc },
   ];
 
   return (
@@ -90,7 +91,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ lang:
               <ScrollReveal key={service.id} direction={index % 2 === 0 ? 'left' : 'right'}>
                 <div id={service.id} className={`${styles.serviceRow} ${index % 2 !== 0 ? styles.serviceRowReversed : ''}`}>
                   <div className={styles.serviceIcon}>
-                    <span>{service.icon}</span>
+                    <service.Icon size={48} color="var(--color-primary)" strokeWidth={1.5} />
                   </div>
                   <div className={styles.serviceContent}>
                     <h2 className={styles.serviceTitle}>{service.title}</h2>
@@ -128,7 +129,7 @@ export default async function ServicesPage({ params }: { params: Promise<{ lang:
             {whyUs.map((item, i) => (
               <ScrollReveal key={i} direction="up">
                 <div className={styles.whyCard}>
-                  <div className={styles.whyIcon}>{item.icon}</div>
+                  <div className={styles.whyIcon}><item.Icon size={32} color="var(--color-primary)" strokeWidth={1.5} /></div>
                   <h3 className={styles.whyTitle}>{item.title}</h3>
                   <p className={styles.whyDesc}>{item.description}</p>
                 </div>

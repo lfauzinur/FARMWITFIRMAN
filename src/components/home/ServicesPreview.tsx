@@ -3,6 +3,7 @@ import { SectionHeader } from '../ui/SectionHeader';
 import { Card } from '../ui/Card';
 import { ScrollReveal } from '../ui/ScrollReveal';
 import { Button } from '../ui/Button';
+import { Wheat, Handshake, GraduationCap } from 'lucide-react';
 import styles from './ServicesPreview.module.css';
 import { Locale } from '@/i18n/config';
 
@@ -15,21 +16,21 @@ export const ServicesPreview: React.FC<ServicesPreviewProps> = ({ dict, locale }
   const services = [
     {
       id: 'products',
-      icon: '🌾',
+      Icon: Wheat,
       title: dict.services.service1Title,
       description: dict.services.service1Desc,
       link: `/${locale}/produk`
     },
     {
       id: 'consulting',
-      icon: '🤝',
+      Icon: Handshake,
       title: dict.services.service2Title,
       description: dict.services.service2Desc,
       link: `/${locale}/layanan#konsultasi`
     },
     {
       id: 'training',
-      icon: '🎓',
+      Icon: GraduationCap,
       title: dict.services.service3Title,
       description: dict.services.service3Desc,
       link: `/${locale}/layanan#pelatihan`
@@ -53,7 +54,7 @@ export const ServicesPreview: React.FC<ServicesPreviewProps> = ({ dict, locale }
               <div style={{ animationDelay: `${index * 150}ms` }}>
                 <Card hoverable className={styles.card}>
                   <div className={styles.iconWrapper}>
-                    <span className={styles.icon}>{service.icon}</span>
+                    <service.Icon size={28} className={styles.icon} />
                   </div>
                   <h3 className={styles.cardTitle}>{service.title}</h3>
                   <p className={styles.cardDesc}>{service.description}</p>

@@ -42,8 +42,12 @@
 }
 
 .icon {
-  font-size: 2rem;
-  transition: filter var(--transition-base);
+  color: var(--color-primary);
+  transition: color var(--transition-base);
+}
+
+.card:hover .icon {
+  color: var(--color-neutral-0);
 }
 
 .cardTitle {
