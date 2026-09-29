@@ -23,26 +23,27 @@ export default function AdminTopbar({ userName }: AdminTopbarProps) {
       top: 0,
       zIndex: 30
     }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '2rem', flex: 1 }}>
-        <h1 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#111827', margin: 0 }}>
-          Hey {firstName} 👋, welcome back!
+      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flex: 1, minWidth: 0 }}>
+        <h1 style={{ fontSize: 'clamp(1rem, 2vw + 0.5rem, 1.5rem)', fontWeight: 'bold', color: '#111827', margin: 0, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+          Hey {firstName} 👋
         </h1>
       </div>
 
-      <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
         {/* Search */}
-        <div style={{ position: 'relative' }}>
+        <div style={{ position: 'relative', display: 'var(--search-display, block)' }}>
           <Search size={18} color="#9ca3af" style={{ position: 'absolute', left: '12px', top: '50%', transform: 'translateY(-50%)' }} />
           <input 
             type="text" 
             placeholder="Search..." 
             style={{
-              padding: '0.625rem 1rem 0.625rem 2.5rem',
+              padding: '0.5rem 1rem 0.5rem 2.5rem',
               borderRadius: '9999px',
               border: '1px solid #e5e7eb',
               backgroundColor: '#f9fafb',
               outline: 'none',
-              width: '250px',
+              width: '100%',
+              maxWidth: '200px',
               fontSize: '0.875rem'
             }}
           />

@@ -50,7 +50,7 @@
   z-index: 30;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .sidebar {
     transform: translateX(-100%);
   }
@@ -70,6 +70,7 @@
 
   .mobileMenuBtn {
     display: block;
+    margin-left: 1rem;
   }
 
   .overlayOpen {
