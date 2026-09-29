@@ -6,6 +6,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { getDictionary } from '@/i18n/getDictionary';
 import { Locale } from '@/i18n/config';
+import styles from './produk.module.css';
 
 export default async function ProductCatalogPage({
   params,
@@ -60,7 +61,7 @@ export default async function ProductCatalogPage({
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 3fr', gap: '2rem' }}>
+        <div className={styles.catalogLayout}>
           
           {/* Sidebar / Categories */}
           <aside>
@@ -109,7 +110,7 @@ export default async function ProductCatalogPage({
                 </h3>
               </div>
             ) : (
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1.5rem' }}>
+              <div className={styles.productGrid}>
                 {products.map((product) => (
                   <div key={product.id} style={{ backgroundColor: 'var(--color-bg)', borderRadius: 'var(--border-radius-lg)', overflow: 'hidden', boxShadow: 'var(--shadow-sm)', transition: 'box-shadow var(--transition-base)', display: 'flex', flexDirection: 'column' }}>
                     <div style={{ height: '200px', backgroundColor: 'var(--color-neutral-200)', position: 'relative' }}>

@@ -7,6 +7,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { getDictionary } from '@/i18n/getDictionary';
 import { Locale } from '@/i18n/config';
+import styles from './productDetail.module.css';
 
 export default async function ProductDetailPage({
   params,
@@ -48,7 +49,7 @@ export default async function ProductDetailPage({
           <span style={{ color: 'var(--color-text)' }}>{productName}</span>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', backgroundColor: 'var(--color-bg)', padding: '3rem', borderRadius: 'var(--border-radius-lg)', boxShadow: 'var(--shadow-md)' }}>
+        <div className={styles.productContainer}>
           
           {/* Product Image */}
           <div style={{ backgroundColor: 'var(--color-neutral-100)', borderRadius: 'var(--border-radius-md)', minHeight: '400px', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>

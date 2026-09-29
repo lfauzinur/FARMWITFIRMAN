@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { registerMember } from '@/app/actions/authActions';
 import { Leaf, User, Mail, Lock, Phone, MapPin, Sprout, Map } from 'lucide-react';
+import styles from './register.module.css';
 
 export default function RegisterPage({ params }: { params: Promise<{ lang: string }> }) {
   const router = useRouter();
@@ -88,7 +89,7 @@ export default function RegisterPage({ params }: { params: Promise<{ lang: strin
             </div>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+          <div className={styles.formGrid}>
             <div>
               <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.875rem', fontWeight: '500', color: '#374151' }}>Bertani Apa? <span style={{ color: '#9ca3af', fontWeight: 'normal' }}>(Opsional)</span></label>
               <div style={{ position: 'relative' }}>
