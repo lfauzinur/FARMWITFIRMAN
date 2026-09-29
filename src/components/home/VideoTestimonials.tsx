@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 interface VideoTestimonial {
@@ -42,7 +42,21 @@ function getEmbedUrl(platform: string, url: string) {
 export default function VideoTestimonials({ testimonials, isId }: VideoTestimonialsProps) {
   const [activeVideo, setActiveVideo] = useState<VideoTestimonial | null>(null);
 
+  useEffect(() => {
+    if (activeVideo?.platform === 'TIKTOK') {
+      const existingScript = document.getElementById('tiktok-embed-script');
+      if (existingScript) existingScript.remove();
+      
+      const script = document.createElement('script');
+      script.id = 'tiktok-embed-script';
+      script.src = 'https://www.tiktok.com/embed.js';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, [activeVideo]);
+
   if (!testimonials || testimonials.length === 0) return null;
+
 
   return (
     <section style={{ padding: 'var(--space-section) 0', backgroundColor: 'var(--color-bg)' }}>
@@ -217,8 +231,9 @@ export default function VideoTestimonials({ testimonials, isId }: VideoTestimoni
                 position: 'relative', width: '100%', maxWidth: '800px',
                 aspectRatio: activeVideo.platform === 'YOUTUBE' ? '16/9' : '9/16',
                 maxHeight: '90vh',
-                backgroundColor: 'black',
-                borderRadius: '0.5rem', overflow: 'hidden'
+                backgroundColor: activeVideo.platform === 'YOUTUBE' ? 'black' : 'white',
+                borderRadius: '0.5rem', overflow: 'hidden',
+                display: 'flex', justifyContent: 'center', alignItems: 'center'
               }}
               onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside video
             >
@@ -235,12 +250,31 @@ export default function VideoTestimonials({ testimonials, isId }: VideoTestimoni
                 &times;
               </button>
               
-              <iframe 
-                src={getEmbedUrl(activeVideo.platform, activeVideo.videoUrl)}
-                style={{ width: '100%', height: '100%', border: 'none' }}
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
+              {activeVideo.platform === 'YOUTUBE' ? (
+                <iframe 
+                  src={getEmbedUrl(activeVideo.platform, activeVideo.videoUrl)}
+                  style={{ width: '100%', height: '100%', border: 'none' }}
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              ) : activeVideo.platform === 'TIKTOK' ? (
+                <div style={{ width: '100%', height: '100%', overflowY: 'auto' }}>
+                  <blockquote 
+                    className="tiktok-embed" 
+                    cite={activeVideo.videoUrl} 
+                    data-video-id={activeVideo.videoUrl.match(/video\/(\d+)/)?.[1] || ""}
+                    style={{ maxWidth: '605px', minWidth: '325px', margin: '0 auto', height: '100%' }}
+                  >
+                    <section></section>
+                  </blockquote>
+                </div>
+              ) : (
+                <iframe 
+                  src={getEmbedUrl(activeVideo.platform, activeVideo.videoUrl)}
+                  style={{ width: '100%', height: '100%', border: 'none' }}
+                  allowFullScreen
+                />
+              )}
             </div>
           </div>
         )}
