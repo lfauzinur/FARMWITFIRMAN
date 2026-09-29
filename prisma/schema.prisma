@@ -1,0 +1,188 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String?   @unique
+  emailVerified DateTime?
+  password      String?
+  image         String?
+  role          String    @default("USER") // USER or ADMIN
+  memberNumber  String?   @unique
+  points        Int       @default(0)
+  level         String    @default("Pemula")
+  phone         String?
+  address       String?
+  farmingType   String?
+  landArea      String?
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  orders        Order[]
+  bookings      Booking[]
+  articles      Article[]
+}
+
+model Product {
+  id            String   @id @default(cuid())
+  slug          String   @unique
+  nameId        String
+  nameEn        String
+  descriptionId String
+  descriptionEn String
+  price         Float
+  stock         Int      @default(0)
+  imageUrl      String?
+  categoryId    String?
+  category      Category? @relation(fields: [categoryId], references: [id])
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  orderItems    OrderItem[]
+}
+
+model Category {
+  id        String    @id @default(cuid())
+  slug      String    @unique
+  nameId    String
+  nameEn    String
+  products  Product[]
+}
+
+model Order {
+  id              String      @id @default(cuid())
+  userId          String
+  user            User        @relation(fields: [userId], references: [id])
+  status          String      @default("PENDING") // PENDING, PAID, SHIPPED, COMPLETED, CANCELLED
+  totalAmount     Float
+  shippingAddress String?
+  paymentRef      String?
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+
+  items           OrderItem[]
+}
+
+model OrderItem {
+  id        String  @id @default(cuid())
+  orderId   String
+  order     Order   @relation(fields: [orderId], references: [id])
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+  quantity  Int
+  price     Float
+}
+
+model ConsultationService {
+  id              String    @id @default(cuid())
+  slug            String    @unique
+  titleId         String
+  titleEn         String
+  descriptionId   String
+  descriptionEn   String
+  durationMinutes Int       @default(60)
+  price           Float
+  
+  bookings        Booking[]
+}
+
+model Booking {
+  id          String              @id @default(cuid())
+  userId      String
+  user        User                @relation(fields: [userId], references: [id])
+  serviceId   String
+  service     ConsultationService @relation(fields: [serviceId], references: [id])
+  dateTime    DateTime
+  status      String              @default("PENDING") // PENDING, CONFIRMED, COMPLETED, CANCELLED
+  meetLink    String?
+  paymentRef  String?
+  notes       String?
+  createdAt   DateTime            @default(now())
+  updatedAt   DateTime            @updatedAt
+}
+
+model VideoTestimonial {
+  id           String   @id @default(cuid())
+  platform     String   // "YOUTUBE", "TIKTOK", "INSTAGRAM"
+  videoUrl     String
+  thumbnailUrl String?
+  category     String?
+  titleId      String
+  titleEn      String
+  isActive     Boolean  @default(true)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Article {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  titleId   String
+  titleEn   String
+  contentId String
+  contentEn String
+  imageUrl  String?
+  authorId  String
+  author    User     @relation(fields: [authorId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Portfolio {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  titleId     String
+  titleEn     String
+  categoryId  String
+  categoryEn  String
+  descId      String
+  descEn      String
+  imageUrl    String?
+  year        String
+  client      String
+  isActive    Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model CompanyProfile {
+  id           String   @id @default("1")
+  storyTitleId String   @default("Kisah Kami")
+  storyTitleEn String   @default("Our Story")
+  storyP1Id    String   @default("Paragraf 1")
+  storyP1En    String   @default("Paragraph 1")
+  storyP2Id    String   @default("Paragraf 2")
+  storyP2En    String   @default("Paragraph 2")
+  visionId     String   @default("Visi Kami")
+  visionEn     String   @default("Our Vision")
+  mission1Id   String   @default("Misi 1")
+  mission1En   String   @default("Mission 1")
+  mission2Id   String   @default("Misi 2")
+  mission2En   String   @default("Mission 2")
+  mission3Id   String   @default("Misi 3")
+  mission3En   String   @default("Mission 3")
+  mission4Id   String   @default("Misi 4")
+  mission4En   String   @default("Mission 4")
+  updatedAt    DateTime @updatedAt
+}
+
+model TeamMember {
+  id        String   @id @default(cuid())
+  name      String
+  roleId    String
+  roleEn    String
+  bioId     String
+  bioEn     String
+  imageUrl  String?
+  isActive  Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

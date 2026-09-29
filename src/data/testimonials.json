@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Budi Santoso",
+    "role": { "id": "Petani Padi, Karawang", "en": "Rice Farmer, Karawang" },
+    "quote": {
+      "id": "Setelah mengikuti program konsultasi dari FARMWITFIRMAN, hasil panen saya meningkat 40% dalam satu musim. Teknologi yang mereka ajarkan sangat mudah diterapkan.",
+      "en": "After joining FARMWITFIRMAN's consulting program, my harvest increased by 40% in one season. The technology they taught is very easy to implement."
+    },
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "name": "Rina Wati",
+    "role": { "id": "Pemilik Kebun Organik, Bandung", "en": "Organic Farm Owner, Bandung" },
+    "quote": {
+      "id": "Platform marketplace mereka membantu saya menjangkau pembeli langsung tanpa perantara. Penjualan naik 3x lipat dalam 6 bulan!",
+      "en": "Their marketplace platform helped me reach buyers directly without middlemen. Sales increased 3x in 6 months!"
+    },
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "Hendra Kurniawan",
+    "role": { "id": "CEO PT Agri Nusantara", "en": "CEO of PT Agri Nusantara" },
+    "quote": {
+      "id": "Greenhouse hidroponik yang dibangun bersama FARMWITFIRMAN menghasilkan sayuran premium dengan kualitas konsisten sepanjang tahun. Investasi terbaik kami.",
+      "en": "The hydroponic greenhouse built with FARMWITFIRMAN produces premium vegetables with consistent quality year-round. Our best investment."
+    },
+    "rating": 5
+  }
+]

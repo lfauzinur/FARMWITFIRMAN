@@ -1,0 +1,50 @@
+[
+  {
+    "id": "greenhouse-hidroponik-bogor",
+    "title": { "id": "Greenhouse Hidroponik Modern", "en": "Modern Hydroponic Greenhouse" },
+    "category": { "id": "Teknologi Pertanian", "en": "Agricultural Technology" },
+    "description": {
+      "id": "Pembangunan greenhouse hidroponik seluas 5.000 m² dengan sistem otomasi penuh untuk produksi sayuran premium di Bogor.",
+      "en": "Construction of a 5,000 m² hydroponic greenhouse with full automation for premium vegetable production in Bogor."
+    },
+    "image": "/images/portfolio-1.png",
+    "year": "2025",
+    "client": "PT Agri Nusantara"
+  },
+  {
+    "id": "smart-farming-jawa-barat",
+    "title": { "id": "Smart Farming Jawa Barat", "en": "West Java Smart Farming" },
+    "category": { "id": "Konsultasi", "en": "Consulting" },
+    "description": {
+      "id": "Implementasi sistem smart farming berbasis IoT untuk 200 hektar lahan padi di Karawang, meningkatkan produktivitas 45%.",
+      "en": "Implementation of an IoT-based smart farming system for 200 hectares of rice paddies in Karawang, increasing productivity by 45%."
+    },
+    "image": "/images/portfolio-2.png",
+    "year": "2024",
+    "client": "Kelompok Tani Makmur Jaya"
+  },
+  {
+    "id": "organic-marketplace",
+    "title": { "id": "Marketplace Organik Nusantara", "en": "Nusantara Organic Marketplace" },
+    "category": { "id": "E-Commerce", "en": "E-Commerce" },
+    "description": {
+      "id": "Pengembangan platform e-commerce untuk distribusi produk organik bersertifikat dari 50+ petani mitra di seluruh Indonesia.",
+      "en": "Development of an e-commerce platform for distributing certified organic products from 50+ partner farmers across Indonesia."
+    },
+    "image": "/images/portfolio-3.png",
+    "year": "2024",
+    "client": "Koperasi Tani Organik"
+  },
+  {
+    "id": "pelatihan-smart-agriculture",
+    "title": { "id": "Pelatihan Smart Agriculture", "en": "Smart Agriculture Training" },
+    "category": { "id": "Pelatihan", "en": "Training" },
+    "description": {
+      "id": "Program pelatihan 6 bulan untuk 500+ petani muda tentang penggunaan drone, sensor tanah, dan analisis data pertanian.",
+      "en": "6-month training program for 500+ young farmers on drone usage, soil sensors, and agricultural data analytics."
+    },
+    "image": "/images/blog-1.png",
+    "year": "2025",
+    "client": "Kementerian Pertanian RI"
+  }
+]

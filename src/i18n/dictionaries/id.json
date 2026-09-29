@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "siteTitle": "FARMWITFIRMAN — Solusi Pertanian Modern",
+    "siteDescription": "Platform digital terpadu untuk produk pertanian, konsultasi agribisnis, dan pelatihan dari FARMWITFIRMAN.",
+    "ogImage": "/images/hero-banner.png"
+  },
+  "nav": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "services": "Layanan",
+    "portfolio": "Portofolio",
+    "blog": "Blog",
+    "contact": "Kontak",
+    "cta": "Jadwalkan Konsultasi",
+    "products": "Produk",
+    "consultation": "Konsultasi"
+  },
+  "hero": {
+    "badge": "🌱 Solusi Pertanian Terpercaya",
+    "title": "Solusi Pertanian Modern untuk Masa Depan",
+    "subtitle": "Kami membantu petani dan pelaku agribisnis mengoptimalkan hasil panen melalui teknologi modern, konsultasi ahli, dan produk berkualitas tinggi.",
+    "ctaPrimary": "Lihat Produk Kami",
+    "ctaSecondary": "Jadwalkan Konsultasi",
+    "stat1Label": "Klien Terlayani",
+    "stat1Value": "500+",
+    "stat2Label": "Proyek Selesai",
+    "stat2Value": "1.200+",
+    "stat3Label": "Tahun Pengalaman",
+    "stat3Value": "15+",
+    "stat4Label": "Hektar Dikelola",
+    "stat4Value": "10.000+"
+  },
+  "services": {
+    "sectionLabel": "Layanan Kami",
+    "title": "Pilar Bisnis Kami",
+    "subtitle": "Tiga layanan utama yang dirancang untuk memajukan sektor pertanian Indonesia.",
+    "service1Title": "Produk Pertanian",
+    "service1Desc": "Produk fisik dan digital berkualitas tinggi — mulai dari bibit unggul, pupuk organik, hingga e-book panduan pertanian modern.",
+    "service2Title": "Konsultasi Agribisnis",
+    "service2Desc": "Sesi konsultasi 1-on-1 dengan pakar kami untuk audit lahan, perencanaan agribisnis, dan strategi pemasaran hasil tani.",
+    "service3Title": "Pelatihan & Workshop",
+    "service3Desc": "Program pelatihan intensif dan workshop praktik langsung tentang teknologi pertanian terkini dan manajemen usaha tani.",
+    "learnMore": "Pelajari Selengkapnya"
+  },
+  "portfolio": {
+    "sectionLabel": "Portofolio",
+    "title": "Proyek yang Telah Kami Tangani",
+    "subtitle": "Beberapa studi kasus dan hasil kerja kami bersama mitra di seluruh Indonesia.",
+    "viewAll": "Lihat Semua Portofolio",
+    "viewProject": "Lihat Detail"
+  },
+  "testimonials": {
+    "sectionLabel": "Testimoni",
+    "title": "Apa Kata Klien Kami",
+    "subtitle": "Kepercayaan dan kepuasan klien adalah prioritas utama kami."
+  },
+  "blog": {
+    "sectionLabel": "Blog & Artikel",
+    "title": "Wawasan Terbaru",
+    "subtitle": "Artikel edukatif seputar pertanian modern, agribisnis, dan inovasi teknologi.",
+    "readMore": "Baca Selengkapnya",
+    "viewAll": "Lihat Semua Artikel",
+    "minRead": "menit baca"
+  },
+  "cta": {
+    "title": "Siap Memulai Perjalanan Anda?",
+    "subtitle": "Hubungi kami untuk konsultasi gratis atau jelajahi produk pertanian terbaik kami.",
+    "ctaPrimary": "Hubungi Kami",
+    "ctaSecondary": "Chat via WhatsApp"
+  },
+  "about": {
+    "sectionLabel": "Tentang Kami",
+    "title": "Mengenal FARMWITFIRMAN",
+    "subtitle": "Perusahaan agribisnis yang berkomitmen memajukan pertanian Indonesia melalui inovasi dan teknologi.",
+    "storyTitle": "Cerita Kami",
+    "storyP1": "FARMWITFIRMAN didirikan dengan satu misi sederhana: membuat pertanian modern dapat diakses oleh semua orang. Berawal dari sebuah lahan kecil, kami kini telah berkembang menjadi platform agribisnis digital yang melayani ribuan petani dan pelaku usaha tani di seluruh Indonesia.",
+    "storyP2": "Dengan menggabungkan pengalaman lapangan selama lebih dari 15 tahun dan teknologi terkini, kami menyediakan solusi lengkap mulai dari produk pertanian berkualitas, konsultasi ahli, hingga pelatihan intensif.",
+    "visionTitle": "Visi",
+    "visionText": "Menjadi platform agribisnis digital terdepan di Asia Tenggara yang memberdayakan petani dengan teknologi dan pengetahuan modern.",
+    "missionTitle": "Misi",
+    "mission1": "Menyediakan produk pertanian berkualitas tinggi dan terjangkau",
+    "mission2": "Memberikan konsultasi dan pelatihan profesional untuk meningkatkan hasil panen",
+    "mission3": "Mengembangkan teknologi pertanian yang ramah lingkungan dan berkelanjutan",
+    "mission4": "Membangun jaringan kemitraan strategis untuk petani Indonesia",
+    "teamTitle": "Tim Kami",
+    "teamSubtitle": "Para profesional berpengalaman di balik FARMWITFIRMAN."
+  },
+  "servicesPage": {
+    "title": "Layanan & Solusi",
+    "subtitle": "Solusi lengkap untuk memajukan usaha pertanian dan agribisnis Anda.",
+    "whyTitle": "Mengapa Memilih Kami?",
+    "why1Title": "Berpengalaman",
+    "why1Desc": "Lebih dari 15 tahun pengalaman di industri pertanian Indonesia.",
+    "why2Title": "Teknologi Modern",
+    "why2Desc": "Mengintegrasikan IoT, AI, dan data analytics dalam solusi pertanian.",
+    "why3Title": "Hasil Terukur",
+    "why3Desc": "Peningkatan rata-rata 40% produktivitas lahan bagi klien kami.",
+    "why4Title": "Pendampingan Penuh",
+    "why4Desc": "Dukungan konsultan dari perencanaan hingga panen."
+  },
+  "contact": {
+    "sectionLabel": "Kontak",
+    "title": "Hubungi Kami",
+    "subtitle": "Kami siap membantu Anda. Kirim pesan atau kunjungi kantor kami.",
+    "nameLabel": "Nama Lengkap",
+    "namePlaceholder": "Masukkan nama Anda",
+    "emailLabel": "Email",
+    "emailPlaceholder": "contoh@email.com",
+    "phoneLabel": "Nomor Telepon",
+    "phonePlaceholder": "+62 812 3456 7890",
+    "subjectLabel": "Subjek",
+    "subjectPlaceholder": "Pilih subjek",
+    "subjects": ["Informasi Umum", "Konsultasi Agribisnis", "Pembelian Produk", "Kerjasama & Kemitraan", "Lainnya"],
+    "messageLabel": "Pesan",
+    "messagePlaceholder": "Tulis pesan Anda...",
+    "submit": "Kirim Pesan",
+    "addressTitle": "Alamat Kantor",
+    "address": "Jl. Pertanian Raya No. 123, Jakarta Selatan, Indonesia 12345",
+    "phoneTitle": "Telepon",
+    "phone": "+62 21 1234 5678",
+    "emailTitle": "Email",
+    "emailAddress": "info@farmwitfirman.id",
+    "hoursTitle": "Jam Operasional",
+    "hours": "Senin - Jumat: 08.00 - 17.00 WIB",
+    "whatsapp": "Chat WhatsApp"
+  },
+  "footer": {
+    "description": "Platform digital terpadu untuk solusi pertanian modern. Produk berkualitas, konsultasi ahli, dan pelatihan profesional.",
+    "quickLinks": "Tautan Cepat",
+    "contactInfo": "Informasi Kontak",
+    "followUs": "Ikuti Kami",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Dapatkan berita dan tips pertanian terbaru.",
+    "newsletterPlaceholder": "Masukkan email Anda",
+    "subscribe": "Berlangganan",
+    "copyright": "© 2026 FARMWITFIRMAN. Hak Cipta Dilindungi.",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Syarat & Ketentuan"
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "user": [
+    {
+      "id": "cmu1w0gv60000p7qbr5m3dvud",
+      "name": "Super Admin",
+      "email": "admin@farmwitfirman.com",
+      "emailVerified": null,
+      "password": "$2b$10$yBYvOgQHLyhcPp.l5KPHIuHE8BlDUBvU6q3hGQ6q5q7E6THIeN3PK",
+      "image": null,
+      "role": "ADMIN",
+      "memberNumber": null,
+      "points": 0,
+      "level": "Pemula",
+      "phone": null,
+      "address": null,
+      "farmingType": null,
+      "landArea": null,
+      "createdAt": "2026-09-14T23:41:55.938Z",
+      "updatedAt": "2026-09-29T12:22:02.536Z"
+    },
+    {
+      "id": "cmu2exyxr000011k4mp4onzq4",
+      "name": "MILATUL HAKIMAH",
+      "email": "bintangpusaka.id@gmail.com",
+      "emailVerified": null,
+      "password": "$2b$10$hiwiFwqvV2b5Ho2KvKEIC.dWSclSbp.Boq6ImeQoizEsaPKsZVq9u",
+      "image": null,
+      "role": "USER",
+      "memberNumber": "3503512768",
+      "points": 0,
+      "level": "Pemula",
+      "phone": "082243701993",
+      "address": "Jl Kapten Waroka No 08 Tukangkayu",
+      "farmingType": "padi",
+      "landArea": "1",
+      "createdAt": "2026-09-15T08:31:52.095Z",
+      "updatedAt": "2026-09-15T08:31:52.095Z"
+    }
+  ],
+  "product": [
+    {
+      "id": "cmu1w6hat00034rwtcyc3qi28",
+      "slug": "pupuk-organik-premium",
+      "nameId": "Pupuk Organik Premium 50kg",
+      "nameEn": "Premium Organic Fertilizer 50kg",
+      "descriptionId": "Pupuk organik berkualitas tinggi untuk meningkatkan hasil panen.",
+      "descriptionEn": "High-quality organic fertilizer to increase crop yields.",
+      "price": 150000,
+      "stock": 100,
+      "imageUrl": "/images/product-placeholder.jpg",
+      "categoryId": "cmu1w6hah00004rwt2v88ehhx",
+      "createdAt": "2026-09-14T23:46:36.437Z",
+      "updatedAt": "2026-09-14T23:46:36.437Z"
+    },
+    {
+      "id": "cmu1w6hau00054rwtt4l3gfev",
+      "slug": "bibit-jagung-hibrida",
+      "nameId": "Bibit Jagung Hibrida",
+      "nameEn": "Hybrid Corn Seeds",
+      "descriptionId": "Bibit jagung hibrida tahan hama dan penyakit.",
+      "descriptionEn": "Pest and disease resistant hybrid corn seeds.",
+      "price": 75000,
+      "stock": 50,
+      "imageUrl": "/images/product-placeholder.jpg",
+      "categoryId": "cmu1w6hah00004rwt2v88ehhx",
+      "createdAt": "2026-09-14T23:46:36.439Z",
+      "updatedAt": "2026-09-14T23:46:36.439Z"
+    },
+    {
+      "id": "cmu1w6hav00074rwt3xivhvqp",
+      "slug": "pelatihan-hidroponik-dasar",
+      "nameId": "Pelatihan Hidroponik Dasar",
+      "nameEn": "Basic Hydroponics Training",
+      "descriptionId": "Modul pelatihan dasar untuk memulai kebun hidroponik di rumah.",
+      "descriptionEn": "Basic training module to start a hydroponic garden at home.",
+      "price": 500000,
+      "stock": 999,
+      "imageUrl": "/images/product-placeholder.jpg",
+      "categoryId": "cmu1w6has00014rwtmw04s4jv",
+      "createdAt": "2026-09-14T23:46:36.440Z",
+      "updatedAt": "2026-09-14T23:46:36.440Z"
+    }
+  ],
+  "category": [
+    {
+      "id": "cmu1w6hah00004rwt2v88ehhx",
+      "slug": "pertanian-fisik",
+      "nameId": "Pertanian Fisik",
+      "nameEn": "Physical Agriculture"
+    },
+    {
+      "id": "cmu1w6has00014rwtmw04s4jv",
+      "slug": "pelatihan",
+      "nameId": "Pelatihan",
+      "nameEn": "Training"
+    }
+  ],
+  "order": [],
+  "orderItem": [],
+  "consultationService": [],
+  "booking": [],
+  "videoTestimonial": [
+    {
+      "id": "cmu1yslac00017patbekhkc5s",
+      "platform": "TIKTOK",
+      "videoUrl": "https://tiktok.com/@senimanpertanian/video/7380...",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1592982537447-6f296d1947b0?q=80&w=600",
+      "category": "TESTIMONI",
+      "titleId": "Testimoni Petani: Metode Buku Sakti",
+      "titleEn": "Farmer Testimonial: Magic Book Method",
+      "isActive": true,
+      "createdAt": "2026-09-15T00:59:47.268Z",
+      "updatedAt": "2026-09-15T00:59:47.268Z"
+    },
+    {
+      "id": "cmu1yslac00027pat8catciie",
+      "platform": "TIKTOK",
+      "videoUrl": "https://tiktok.com",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1589923188900-85dae523342b?q=80&w=600",
+      "category": "FOR YOU PAGE",
+      "titleId": "Lahan Cabai Terlebat",
+      "titleEn": "Thickest Chili Field",
+      "isActive": true,
+      "createdAt": "2026-09-15T00:59:47.268Z",
+      "updatedAt": "2026-09-15T00:59:47.268Z"
+    },
+    {
+      "id": "cmu1yslac00037patirvvbe78",
+      "platform": "TIKTOK",
+      "videoUrl": "https://tiktok.com",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1595841696677-6489ff3f8cd1?q=80&w=600",
+      "category": "LAHAN",
+      "titleId": "Uji Nyali Tanam Cabai di Daerah Endemik!",
+      "titleEn": "Brave Chili Planting in Endemic Areas!",
+      "isActive": true,
+      "createdAt": "2026-09-15T00:59:47.268Z",
+      "updatedAt": "2026-09-15T00:59:47.268Z"
+    },
+    {
+      "id": "cmu1yslac00047pat7jkujj26",
+      "platform": "YOUTUBE",
+      "videoUrl": "https://youtube.com",
+      "thumbnailUrl": "https://images.unsplash.com/photo-1598442037996-2489e27c1cb0?q=80&w=600",
+      "category": "PAK KYAI",
+      "titleId": "Pak Kyai Tanam Cabai dengan Metode Buku Sakti",
+      "titleEn": "Pak Kyai Plants Chili with Magic Book Method",
+      "isActive": true,
+      "createdAt": "2026-09-15T00:59:47.268Z",
+      "updatedAt": "2026-09-15T00:59:47.268Z"
+    }
+  ],
+  "article": [
+    {
+      "id": "cmu2i6uj3000211k45sl6yfqh",
+      "slug": "coba-artikel-1789466565126",
+      "titleId": "COBA ARTIKEL",
+      "titleEn": "COBA ARTIKEL",
+      "contentId": "COBA ARTIKEL",
+      "contentEn": "COBA ARTIKEL",
+      "imageUrl": "",
+      "authorId": "cmu1w0gv60000p7qbr5m3dvud",
+      "createdAt": "2026-09-15T10:02:45.133Z",
+      "updatedAt": "2026-09-15T10:02:45.133Z"
+    }
+  ],
+  "portfolio": [],
+  "companyProfile": [
+    {
+      "id": "1",
+      "storyTitleId": "Kisah Kami",
+      "storyTitleEn": "Our Story",
+      "storyP1Id": "Paragraf 1",
+      "storyP1En": "Paragraph 1",
+      "storyP2Id": "Paragraf 2",
+      "storyP2En": "Paragraph 2",
+      "visionId": "Visi Kami",
+      "visionEn": "Our Vision",
+      "mission1Id": "Misi 1",
+      "mission1En": "Mission 1",
+      "mission2Id": "Misi 2",
+      "mission2En": "Mission 2",
+      "mission3Id": "Misi 3",
+      "mission3En": "Mission 3",
+      "mission4Id": "Misi 4",
+      "mission4En": "Mission 4",
+      "updatedAt": "2026-09-29T12:42:09.256Z"
+    }
+  ],
+  "teamMember": []
+}

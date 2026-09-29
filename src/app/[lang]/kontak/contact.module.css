@@ -1,0 +1,105 @@
+.pageHeader {
+  position: relative;
+  padding-top: calc(80px + var(--space-16));
+  padding-bottom: var(--space-16);
+  text-align: center;
+  background-color: var(--color-bg-alt);
+}
+
+.label {
+  display: inline-block;
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--space-4);
+}
+
+.pageTitle { margin-bottom: var(--space-4); }
+
+.pageSubtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-12);
+}
+
+@media (min-width: 992px) {
+  .grid {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+
+.formCard {
+  background-color: var(--color-bg);
+  padding: var(--space-8);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-lg);
+}
+
+@media (min-width: 768px) {
+  .formCard {
+    padding: var(--space-10);
+  }
+}
+
+.infoCol {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.infoCard {
+  padding: var(--space-6);
+  background-color: var(--color-bg-alt);
+  border-radius: var(--radius-xl);
+  transition: all var(--transition-base);
+}
+
+.infoCard:hover {
+  background-color: var(--color-primary-light);
+}
+
+.infoIcon {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-2);
+}
+
+.infoTitle {
+  font-size: var(--font-size-base);
+  color: var(--color-neutral-900);
+  margin-bottom: var(--space-2);
+}
+
+.infoText {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.whatsappBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  background-color: #25D366;
+  color: var(--color-neutral-0);
+  border-radius: var(--radius-lg);
+  font-weight: var(--font-weight-semibold);
+  transition: all var(--transition-base);
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.whatsappBtn:hover {
+  background-color: #1fba56;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}

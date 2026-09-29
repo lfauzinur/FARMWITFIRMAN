@@ -1,0 +1,105 @@
+.wrapper {
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.card {
+  background-color: var(--color-bg);
+  border-radius: var(--radius-2xl);
+  padding: var(--space-10);
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+  position: relative;
+}
+
+.quoteIcon {
+  font-family: var(--font-heading);
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--color-primary-medium);
+  position: absolute;
+  top: var(--space-4);
+  left: var(--space-8);
+}
+
+.quote {
+  font-size: var(--font-size-lg);
+  color: var(--color-text);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--space-6);
+  font-style: italic;
+  position: relative;
+  z-index: 1;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-1);
+  margin-bottom: var(--space-6);
+}
+
+.star {
+  color: var(--color-accent);
+  font-size: 1.25rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  justify-content: center;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--color-green-400), var(--color-green-600));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-neutral-0);
+  font-size: var(--font-size-lg);
+}
+
+.name {
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-neutral-900);
+}
+
+.role {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-3);
+  margin-top: var(--space-8);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--color-border-strong);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+}
+
+.dot:hover {
+  background-color: var(--color-text-muted);
+}
+
+.dotActive {
+  background-color: var(--color-primary);
+  width: 32px;
+  border-radius: var(--radius-full);
+}

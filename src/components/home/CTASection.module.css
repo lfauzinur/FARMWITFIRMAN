@@ -1,0 +1,78 @@
+.cta {
+  padding-block: var(--space-section);
+}
+
+.ctaContainer {
+  position: relative;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-2xl);
+  background: linear-gradient(135deg, var(--color-green-700), var(--color-green-900));
+  padding: var(--space-16) var(--space-8);
+  text-align: center;
+  box-shadow: var(--shadow-xl);
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: var(--space-20) var(--space-16);
+  }
+}
+
+.decor1 {
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.decor2 {
+  position: absolute;
+  bottom: -40px;
+  left: -40px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+.title {
+  color: var(--color-neutral-0);
+  margin-bottom: var(--space-4);
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: var(--font-size-lg);
+  margin-bottom: var(--space-8);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+
+.actions a:last-child {
+  color: var(--color-neutral-0);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.actions a:last-child:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}

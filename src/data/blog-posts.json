@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "teknologi-smart-farming-2026",
+    "title": {
+      "id": "Tren Teknologi Smart Farming yang Wajib Diketahui di 2026",
+      "en": "Smart Farming Technology Trends You Must Know in 2026"
+    },
+    "excerpt": {
+      "id": "Perkembangan teknologi pertanian semakin pesat. Simak tren terbaru yang akan mengubah cara kita bertani.",
+      "en": "Agricultural technology is advancing rapidly. Discover the latest trends that will transform the way we farm."
+    },
+    "category": { "id": "Teknologi", "en": "Technology" },
+    "image": "/images/blog-1.png",
+    "date": "2026-08-15",
+    "readTime": 5,
+    "author": "Firman Rahman"
+  },
+  {
+    "slug": "panduan-hidroponik-pemula",
+    "title": {
+      "id": "Panduan Lengkap Memulai Pertanian Hidroponik untuk Pemula",
+      "en": "Complete Guide to Starting Hydroponic Farming for Beginners"
+    },
+    "excerpt": {
+      "id": "Ingin memulai pertanian hidroponik? Artikel ini membahas langkah-langkah dasar yang perlu Anda ketahui.",
+      "en": "Want to start hydroponic farming? This article covers the basic steps you need to know."
+    },
+    "category": { "id": "Panduan", "en": "Guide" },
+    "image": "/images/portfolio-1.png",
+    "date": "2026-07-28",
+    "readTime": 8,
+    "author": "Sari Dewi"
+  },
+  {
+    "slug": "riset-pertanian-berkelanjutan",
+    "title": {
+      "id": "Riset Terbaru: Pertanian Berkelanjutan dan Dampaknya terhadap Lingkungan",
+      "en": "Latest Research: Sustainable Agriculture and Its Environmental Impact"
+    },
+    "excerpt": {
+      "id": "Bagaimana praktik pertanian berkelanjutan dapat mengurangi emisi karbon dan meningkatkan kualitas tanah? Simak hasil riset terbaru.",
+      "en": "How can sustainable farming practices reduce carbon emissions and improve soil quality? See the latest research findings."
+    },
+    "category": { "id": "Riset", "en": "Research" },
+    "image": "/images/blog-2.png",
+    "date": "2026-07-10",
+    "readTime": 6,
+    "author": "Ahmad Yusuf"
+  }
+]

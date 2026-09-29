@@ -1,0 +1,65 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-8);
+  }
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-8);
+  border-top: 4px solid transparent;
+  transition: all var(--transition-base);
+}
+
+.card:hover {
+  border-top-color: var(--color-primary);
+}
+
+.iconWrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-2xl);
+  background-color: var(--color-primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-6);
+  transition: transform var(--transition-bounce);
+}
+
+.card:hover .iconWrapper {
+  transform: scale(1.1) rotate(5deg);
+  background-color: var(--color-primary);
+}
+
+.icon {
+  font-size: 2rem;
+  transition: filter var(--transition-base);
+}
+
+.cardTitle {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-4);
+  color: var(--color-neutral-900);
+}
+
+.cardDesc {
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-6);
+  flex-grow: 1;
+}
+
+.cardLink {
+  align-self: flex-start;
+  padding-left: 0;
+  padding-right: 0;
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "firman-rahman",
+    "name": "Firman Rahman",
+    "role": { "id": "CEO & Founder", "en": "CEO & Founder" },
+    "bio": {
+      "id": "Pakar agribisnis dengan pengalaman 15+ tahun dalam pengelolaan lahan pertanian modern.",
+      "en": "Agribusiness expert with 15+ years of experience in modern farm land management."
+    },
+    "image": "/images/team-1.svg"
+  },
+  {
+    "id": "sari-dewi",
+    "name": "Sari Dewi",
+    "role": { "id": "Kepala Konsultan", "en": "Head of Consulting" },
+    "bio": {
+      "id": "Spesialis konsultasi agribisnis dan perencanaan strategis untuk petani skala menengah-besar.",
+      "en": "Agribusiness consulting specialist and strategic planning for medium-to-large scale farmers."
+    },
+    "image": "/images/team-2.svg"
+  },
+  {
+    "id": "ahmad-yusuf",
+    "name": "Ahmad Yusuf",
+    "role": { "id": "Kepala Teknologi", "en": "Head of Technology" },
+    "bio": {
+      "id": "Ahli teknologi pertanian presisi, pengembangan IoT dan sistem monitoring lahan.",
+      "en": "Precision agriculture technology expert, IoT development and land monitoring systems."
+    },
+    "image": "/images/team-3.svg"
+  },
+  {
+    "id": "maya-putri",
+    "name": "Maya Putri",
+    "role": { "id": "Kepala Pelatihan", "en": "Head of Training" },
+    "bio": {
+      "id": "Bertanggung jawab atas program pelatihan dan workshop di seluruh Indonesia.",
+      "en": "Responsible for training programs and workshops across Indonesia."
+    },
+    "image": "/images/team-4.svg"
+  }
+]

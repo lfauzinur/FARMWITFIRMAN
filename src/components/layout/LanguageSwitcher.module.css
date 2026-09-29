@@ -1,0 +1,35 @@
+.switcher {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-heading);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  background-color: var(--color-bg-subtle);
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius-full);
+}
+
+.langBtn {
+  background: none;
+  border: none;
+  padding: var(--space-1) var(--space-2);
+  color: var(--color-text-muted);
+  cursor: pointer;
+  transition: color var(--transition-base);
+  border-radius: var(--radius-full);
+}
+
+.langBtn:hover {
+  color: var(--color-text);
+}
+
+.langBtn.active {
+  color: var(--color-primary);
+  background-color: var(--color-bg);
+  box-shadow: var(--shadow-sm);
+}
+
+.divider {
+  color: var(--color-border);
+}

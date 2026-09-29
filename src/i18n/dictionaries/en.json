@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "siteTitle": "FARMWITFIRMAN — Modern Agriculture Solutions",
+    "siteDescription": "An integrated digital platform for agricultural products, agribusiness consulting, and training by FARMWITFIRMAN.",
+    "ogImage": "/images/hero-banner.png"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "contact": "Contact",
+    "cta": "Book Consultation",
+    "products": "Products",
+    "consultation": "Consultation"
+  },
+  "hero": {
+    "badge": "🌱 Trusted Agriculture Solutions",
+    "title": "Modern Agriculture Solutions for the Future",
+    "subtitle": "We help farmers and agribusiness professionals optimize their harvest through modern technology, expert consulting, and high-quality products.",
+    "ctaPrimary": "View Our Products",
+    "ctaSecondary": "Book Consultation",
+    "stat1Label": "Clients Served",
+    "stat1Value": "500+",
+    "stat2Label": "Projects Completed",
+    "stat2Value": "1,200+",
+    "stat3Label": "Years Experience",
+    "stat3Value": "15+",
+    "stat4Label": "Hectares Managed",
+    "stat4Value": "10,000+"
+  },
+  "services": {
+    "sectionLabel": "Our Services",
+    "title": "Our Business Pillars",
+    "subtitle": "Three core services designed to advance Indonesia's agricultural sector.",
+    "service1Title": "Agricultural Products",
+    "service1Desc": "High-quality physical and digital products — from premium seeds and organic fertilizers to modern farming e-book guides.",
+    "service2Title": "Agribusiness Consulting",
+    "service2Desc": "One-on-one consulting sessions with our experts for land audits, agribusiness planning, and crop marketing strategies.",
+    "service3Title": "Training & Workshops",
+    "service3Desc": "Intensive training programs and hands-on workshops on the latest agricultural technology and farm management.",
+    "learnMore": "Learn More"
+  },
+  "portfolio": {
+    "sectionLabel": "Portfolio",
+    "title": "Projects We Have Delivered",
+    "subtitle": "Selected case studies and results from our partnerships across Indonesia.",
+    "viewAll": "View All Portfolio",
+    "viewProject": "View Details"
+  },
+  "testimonials": {
+    "sectionLabel": "Testimonials",
+    "title": "What Our Clients Say",
+    "subtitle": "Client trust and satisfaction are our top priorities."
+  },
+  "blog": {
+    "sectionLabel": "Blog & Articles",
+    "title": "Latest Insights",
+    "subtitle": "Educational articles about modern agriculture, agribusiness, and technology innovation.",
+    "readMore": "Read More",
+    "viewAll": "View All Articles",
+    "minRead": "min read"
+  },
+  "cta": {
+    "title": "Ready to Start Your Journey?",
+    "subtitle": "Contact us for a free consultation or explore our best agricultural products.",
+    "ctaPrimary": "Contact Us",
+    "ctaSecondary": "Chat via WhatsApp"
+  },
+  "about": {
+    "sectionLabel": "About Us",
+    "title": "About FARMWITFIRMAN",
+    "subtitle": "An agribusiness company committed to advancing Indonesian agriculture through innovation and technology.",
+    "storyTitle": "Our Story",
+    "storyP1": "FARMWITFIRMAN was founded with one simple mission: making modern agriculture accessible to everyone. Starting from a small plot of land, we have grown into a digital agribusiness platform serving thousands of farmers and agricultural entrepreneurs across Indonesia.",
+    "storyP2": "By combining over 15 years of field experience with cutting-edge technology, we provide comprehensive solutions from quality agricultural products, expert consulting, to intensive training programs.",
+    "visionTitle": "Vision",
+    "visionText": "To become the leading digital agribusiness platform in Southeast Asia, empowering farmers with modern technology and knowledge.",
+    "missionTitle": "Mission",
+    "mission1": "Provide high-quality and affordable agricultural products",
+    "mission2": "Deliver professional consulting and training to increase crop yields",
+    "mission3": "Develop environmentally friendly and sustainable farming technology",
+    "mission4": "Build strategic partnerships for Indonesian farmers",
+    "teamTitle": "Our Team",
+    "teamSubtitle": "The experienced professionals behind FARMWITFIRMAN."
+  },
+  "servicesPage": {
+    "title": "Services & Solutions",
+    "subtitle": "Complete solutions to advance your agricultural and agribusiness ventures.",
+    "whyTitle": "Why Choose Us?",
+    "why1Title": "Experienced",
+    "why1Desc": "Over 15 years of experience in the Indonesian agricultural industry.",
+    "why2Title": "Modern Technology",
+    "why2Desc": "Integrating IoT, AI, and data analytics into agricultural solutions.",
+    "why3Title": "Measurable Results",
+    "why3Desc": "Average 40% increase in land productivity for our clients.",
+    "why4Title": "Full Support",
+    "why4Desc": "Consultant support from planning through harvest."
+  },
+  "contact": {
+    "sectionLabel": "Contact",
+    "title": "Get In Touch",
+    "subtitle": "We're here to help. Send a message or visit our office.",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Enter your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "example@email.com",
+    "phoneLabel": "Phone Number",
+    "phonePlaceholder": "+62 812 3456 7890",
+    "subjectLabel": "Subject",
+    "subjectPlaceholder": "Select a subject",
+    "subjects": ["General Inquiry", "Agribusiness Consulting", "Product Purchase", "Partnership", "Other"],
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write your message...",
+    "submit": "Send Message",
+    "addressTitle": "Office Address",
+    "address": "Jl. Pertanian Raya No. 123, South Jakarta, Indonesia 12345",
+    "phoneTitle": "Phone",
+    "phone": "+62 21 1234 5678",
+    "emailTitle": "Email",
+    "emailAddress": "info@farmwitfirman.id",
+    "hoursTitle": "Business Hours",
+    "hours": "Monday - Friday: 08:00 AM - 05:00 PM (WIB)",
+    "whatsapp": "Chat WhatsApp"
+  },
+  "footer": {
+    "description": "An integrated digital platform for modern agriculture solutions. Quality products, expert consulting, and professional training.",
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "followUs": "Follow Us",
+    "newsletter": "Newsletter",
+    "newsletterDesc": "Get the latest agricultural news and tips.",
+    "newsletterPlaceholder": "Enter your email",
+    "subscribe": "Subscribe",
+    "copyright": "© 2026 FARMWITFIRMAN. All Rights Reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions"
+  }
+}
