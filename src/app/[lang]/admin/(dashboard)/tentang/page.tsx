@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { getCompanyProfile, getTeamMembers } from '@/app/actions/aboutActions';
 import CompanyProfileForm from '@/components/admin/CompanyProfileForm';
 
@@ -25,9 +26,22 @@ export default async function AdminTentangPage({ params }: { params: Promise<{ l
       <div style={{ background: 'white', padding: '2rem', borderRadius: '1rem', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
         <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold', marginBottom: '1rem' }}>Manajemen Tim</h2>
         <p style={{ color: '#6b7280', marginBottom: '1rem' }}>Saat ini tim berjumlah {teamMembers.length} orang. Fitur tambah/edit tim dapat ditambahkan di sini.</p>
-        <button style={{ padding: '0.5rem 1rem', background: '#e5e7eb', borderRadius: '0.5rem', border: 'none', cursor: 'pointer', fontWeight: 'bold' }}>
-          + Tambah Anggota Tim
-        </button>
+        <Link 
+          href={`/${lang}/admin/tentang/tim`}
+          style={{ 
+            display: 'inline-block',
+            padding: '0.5rem 1rem', 
+            background: '#e5e7eb', 
+            color: '#111827',
+            borderRadius: '0.5rem', 
+            border: 'none', 
+            cursor: 'pointer', 
+            fontWeight: 'bold',
+            textDecoration: 'none'
+          }}
+        >
+          + Manajemen Tim
+        </Link>
       </div>
     </div>
   );

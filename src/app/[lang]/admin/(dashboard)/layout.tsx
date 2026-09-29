@@ -3,6 +3,7 @@ import { auth } from '@/auth';
 import { redirect } from 'next/navigation';
 import AdminSidebar from '@/components/admin/AdminSidebar';
 import AdminTopbar from '@/components/admin/AdminTopbar';
+import AdminLayoutClient from '@/components/admin/AdminLayoutClient';
 
 export default async function AdminLayout({
   children,
@@ -20,18 +21,11 @@ export default async function AdminLayout({
   }
 
   return (
-    <div style={{ display: 'flex', minHeight: '100vh', backgroundColor: '#f4f7f6', fontFamily: 'var(--font-inter), sans-serif' }}>
-      
-      <AdminSidebar lang={lang} />
-      
-      <div style={{ flex: 1, marginLeft: '260px', display: 'flex', flexDirection: 'column' }}>
-        <AdminTopbar userName={session.user.name} />
-        
-        <main style={{ padding: '2rem' }}>
-          {children}
-        </main>
-      </div>
-
-    </div>
+    <AdminLayoutClient 
+      sidebar={<AdminSidebar lang={lang} />}
+      topbar={<AdminTopbar userName={session.user.name} />}
+    >
+      {children}
+    </AdminLayoutClient>
   );
 }

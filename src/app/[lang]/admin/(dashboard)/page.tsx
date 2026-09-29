@@ -1,6 +1,7 @@
 import React from 'react';
 import { prisma } from '@/lib/prisma';
 import { Package, Tags, Video, ShoppingCart, Users, TrendingUp, Truck, CreditCard } from 'lucide-react';
+import styles from './adminOverview.module.css';
 
 export default async function AdminDashboardPage() {
   const [
@@ -55,14 +56,14 @@ export default async function AdminDashboardPage() {
   });
 
   const overviewCards = [
-    { title: 'Total Member', count: memberCount, icon: Users, color: '#6366f1', bgColor: '#eef2ff' },
-    { title: 'Pesanan Masuk', count: orderCount, icon: ShoppingCart, color: '#f59e0b', bgColor: '#fef3c7' },
+    { title: 'Total Member', count: memberCount, icon: Users, color: '#10b981', bgColor: '#ecfdf5' },
+    { title: 'Pesanan Masuk', count: orderCount, icon: ShoppingCart, color: '#10b981', bgColor: '#ecfdf5' },
     { title: 'Produk Terjual', count: productsSold, icon: TrendingUp, color: '#10b981', bgColor: '#ecfdf5' },
-    { title: 'Sudah Terkirim', count: shippedOrderCount, icon: Truck, color: '#3b82f6', bgColor: '#eff6ff' },
-    { title: 'Total Produk', count: productCount, icon: Package, color: '#8b5cf6', bgColor: '#f5f3ff' },
-    { title: 'Kategori', count: categoryCount, icon: Tags, color: '#ec4899', bgColor: '#fdf2f8' },
-    { title: 'Sudah Bayar', count: paidOrderCount, icon: CreditCard, color: '#14b8a6', bgColor: '#f0fdfa' },
-    { title: 'Video Testimoni', count: testimonialCount, icon: Video, color: '#f97316', bgColor: '#fff7ed' },
+    { title: 'Sudah Terkirim', count: shippedOrderCount, icon: Truck, color: '#10b981', bgColor: '#ecfdf5' },
+    { title: 'Total Produk', count: productCount, icon: Package, color: '#10b981', bgColor: '#ecfdf5' },
+    { title: 'Kategori', count: categoryCount, icon: Tags, color: '#10b981', bgColor: '#ecfdf5' },
+    { title: 'Sudah Bayar', count: paidOrderCount, icon: CreditCard, color: '#10b981', bgColor: '#ecfdf5' },
+    { title: 'Video Testimoni', count: testimonialCount, icon: Video, color: '#10b981', bgColor: '#ecfdf5' },
   ];
 
   const getStatusBadge = (status: string) => {
@@ -79,7 +80,7 @@ export default async function AdminDashboardPage() {
   return (
     <div>
       {/* Stats Grid */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem', marginBottom: '2rem' }}>
+      <div className={styles.statsGrid}>
         {overviewCards.map((card, index) => (
           <div key={index} style={{ 
             backgroundColor: 'white', 
@@ -98,7 +99,8 @@ export default async function AdminDashboardPage() {
               backgroundColor: card.bgColor, 
               display: 'flex', 
               alignItems: 'center', 
-              justifyContent: 'center' 
+              justifyContent: 'center',
+              flexShrink: 0
             }}>
               <card.icon size={24} color={card.color} />
             </div>
@@ -111,16 +113,7 @@ export default async function AdminDashboardPage() {
       </div>
 
       {/* Revenue Banner */}
-      <div style={{ 
-        background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)', 
-        borderRadius: '0.75rem', 
-        padding: '1.5rem 2rem', 
-        marginBottom: '2rem', 
-        color: 'white',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center'
-      }}>
+      <div className={styles.revenueBanner}>
         <div>
           <p style={{ fontSize: '0.875rem', opacity: 0.9, marginBottom: '0.5rem' }}>Total Pendapatan (Lunas)</p>
           <h2 style={{ fontSize: '2rem', fontWeight: 'bold', margin: 0 }}>Rp {totalRevenue.toLocaleString('id-ID')}</h2>
@@ -128,7 +121,7 @@ export default async function AdminDashboardPage() {
         <CreditCard size={48} style={{ opacity: 0.3 }} />
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+      <div className={styles.bottomGrid}>
         
         {/* Recent Orders */}
         <div style={{ 

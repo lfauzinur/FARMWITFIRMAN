@@ -70,16 +70,9 @@ export default function AdminSidebar({ lang }: AdminSidebarProps) {
 
   return (
     <aside style={{ 
-      width: '260px', 
-      backgroundColor: 'white', 
-      borderRight: '1px solid #e5e7eb',
       display: 'flex', 
       flexDirection: 'column',
-      height: '100vh',
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      zIndex: 40
+      height: '100%',
     }}>
       {/* Logo */}
       <div style={{ padding: '1.5rem', display: 'flex', alignItems: 'center', gap: '0.75rem', borderBottom: '1px solid #f3f4f6' }}>
