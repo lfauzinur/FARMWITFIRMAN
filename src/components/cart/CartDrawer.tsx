@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useCartStore } from '@/stores/cartStore';
+import { ShoppingBag } from 'lucide-react';
 
 interface CartDrawerProps {
   lang: string;
@@ -62,8 +63,8 @@ export default function CartDrawer({ lang }: CartDrawerProps) {
             borderBottom: '1px solid var(--color-border)',
           }}
         >
-          <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold', margin: 0 }}>
-            🛒 {isId ? 'Keranjang Belanja' : 'Shopping Cart'} ({items.length})
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 'bold', margin: 0, display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+            <ShoppingBag size={20} /> {isId ? 'Keranjang Belanja' : 'Shopping Cart'} ({items.length})
           </h2>
           <button
             onClick={closeCart}
@@ -93,7 +94,7 @@ export default function CartDrawer({ lang }: CartDrawerProps) {
                 gap: '1rem',
               }}
             >
-              <span style={{ fontSize: '3rem' }}>🛒</span>
+              <ShoppingBag size={48} color="var(--color-text-secondary)" strokeWidth={1.5} />
               <p>{isId ? 'Keranjang masih kosong' : 'Your cart is empty'}</p>
               <button
                 onClick={closeCart}

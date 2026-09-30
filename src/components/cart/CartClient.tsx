@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useCartStore } from '@/stores/cartStore';
+import { ShoppingBag } from 'lucide-react';
 
 export default function CartClient({ lang }: { lang: string }) {
   const [mounted, setMounted] = useState(false);
@@ -27,13 +28,13 @@ export default function CartClient({ lang }: { lang: string }) {
           <span style={{ color: 'var(--color-text)' }}>{isId ? 'Keranjang Belanja' : 'Shopping Cart'}</span>
         </div>
 
-        <h1 style={{ fontSize: 'var(--font-size-3xl)', fontFamily: 'var(--font-heading)', marginBottom: '2rem' }}>
-          🛒 {isId ? 'Keranjang Belanja' : 'Shopping Cart'}
+        <h1 style={{ fontSize: 'var(--font-size-3xl)', fontFamily: 'var(--font-heading)', marginBottom: '2rem', display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          <ShoppingBag size={36} color="var(--color-primary)" /> {isId ? 'Keranjang Belanja' : 'Shopping Cart'}
         </h1>
 
         {items.length === 0 ? (
           <div style={{ textAlign: 'center', padding: '5rem 2rem', backgroundColor: 'var(--color-bg)', borderRadius: 'var(--border-radius-lg)', boxShadow: 'var(--shadow-sm)' }}>
-            <span style={{ fontSize: '4rem', display: 'block', marginBottom: '1.5rem' }}>🛒</span>
+            <ShoppingBag size={64} color="var(--color-text-secondary)" strokeWidth={1} style={{ display: 'block', margin: '0 auto 1.5rem' }} />
             <h2 style={{ fontSize: 'var(--font-size-xl)', marginBottom: '1rem', color: 'var(--color-text-secondary)' }}>
               {isId ? 'Keranjang Anda masih kosong' : 'Your cart is empty'}
             </h2>

@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useCartStore, CartItem } from '@/stores/cartStore';
+import { ShoppingBag } from 'lucide-react';
 
 interface AddToCartButtonProps {
   productId: string;
@@ -42,9 +43,14 @@ export default function AddToCartButton({
         fontWeight: 'bold',
         cursor: 'pointer',
         transition: 'background-color 0.2s ease',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: '0.5rem',
       }}
     >
-      {isId ? '🛒 Tambah ke Keranjang' : '🛒 Add to Cart'}
+      <ShoppingBag size={20} />
+      {isId ? 'Tambah ke Keranjang' : 'Add to Cart'}
     </button>
   );
 }
