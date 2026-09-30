@@ -12,16 +12,18 @@ export default function AdminTopbar({ userName }: AdminTopbarProps) {
 
   return (
     <header style={{
-      height: '80px',
+      height: '70px',
       backgroundColor: 'white',
       borderBottom: '1px solid #e5e7eb',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
-      padding: '0 2rem',
+      padding: '0 clamp(0.5rem, 3vw, 2rem)',
       position: 'sticky',
       top: 0,
-      zIndex: 30
+      zIndex: 30,
+      width: '100%',
+      boxSizing: 'border-box'
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flex: 1, minWidth: 0 }}>
         <h1 style={{ fontSize: 'clamp(1rem, 2vw + 0.5rem, 1.5rem)', fontWeight: 'bold', color: '#111827', margin: 0, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>

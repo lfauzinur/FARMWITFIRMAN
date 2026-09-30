@@ -31,7 +31,7 @@ export default function AdminLayoutClient({
       
       <div className={styles.mainContent}>
         {/* Topbar Wrapper with Hamburger */}
-        <div style={{ display: 'flex', alignItems: 'center', backgroundColor: 'white', borderBottom: '1px solid #e5e7eb' }}>
+        <div style={{ display: 'flex', alignItems: 'center', backgroundColor: 'white', borderBottom: '1px solid #e5e7eb', width: '100%', boxSizing: 'border-box' }}>
           <button 
             className={styles.mobileMenuBtn} 
             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
