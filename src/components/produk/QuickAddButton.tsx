@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { useCartStore } from '@/stores/cartStore';
+import { ShoppingBag } from 'lucide-react';
 
 interface QuickAddButtonProps {
   id: string;
@@ -35,9 +36,13 @@ export default function QuickAddButton({
         fontWeight: 'bold',
         cursor: 'pointer',
         transition: 'opacity 0.2s ease',
+        display: 'flex',
+        alignItems: 'center',
+        gap: '0.4rem',
       }}
     >
-      🛒 {isId ? 'Beli' : 'Buy'}
+      <ShoppingBag size={16} /> {isId ? 'Beli' : 'Buy'}
     </button>
   );
 }
+

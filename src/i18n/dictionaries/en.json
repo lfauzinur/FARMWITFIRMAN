@@ -11,7 +11,7 @@
     "portfolio": "Portfolio",
     "blog": "Blog",
     "contact": "Contact",
-    "cta": "Book Consultation",
+    "cta": "Join Community",
     "products": "Products",
     "consultation": "Consultation"
   },
@@ -20,7 +20,7 @@
     "title": "Modern Agriculture Solutions for the Future",
     "subtitle": "We help farmers and agribusiness professionals optimize their harvest through modern technology, expert consulting, and high-quality products.",
     "ctaPrimary": "View Our Products",
-    "ctaSecondary": "Book Consultation",
+    "ctaSecondary": "Join Community",
     "stat1Label": "Clients Served",
     "stat1Value": "500+",
     "stat2Label": "Projects Completed",

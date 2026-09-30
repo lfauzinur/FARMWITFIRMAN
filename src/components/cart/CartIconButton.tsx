@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useCartStore } from '@/stores/cartStore';
+import { ShoppingBag } from 'lucide-react';
 
 interface CartIconButtonProps {
   lang: string;
@@ -26,14 +27,13 @@ export default function CartIconButton({ lang }: CartIconButtonProps) {
         background: 'none',
         border: 'none',
         cursor: 'pointer',
-        fontSize: '1.5rem',
         padding: '0.25rem',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
       }}
     >
-      🛒
+      <ShoppingBag size={22} color="var(--color-primary)" strokeWidth={2} />
       {mounted && totalItems > 0 && (
         <span
           style={{
@@ -58,3 +58,4 @@ export default function CartIconButton({ lang }: CartIconButtonProps) {
     </button>
   );
 }
+

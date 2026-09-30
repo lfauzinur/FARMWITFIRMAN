@@ -75,7 +75,7 @@ export const Navbar: React.FC<NavbarProps> = ({ dict, locale }) => {
           <div className={styles.desktopActions}>
             <CartIconButton lang={locale} />
             <LanguageSwitcher currentLocale={locale} />
-            <Button href={`/${locale}/kontak`} variant="primary" size="sm">
+            <Button href={`/${locale}/komunitas`} variant="primary" size="sm">
               {dict.nav.cta}
             </Button>
           </div>
@@ -117,7 +117,7 @@ export const Navbar: React.FC<NavbarProps> = ({ dict, locale }) => {
           </ul>
         </nav>
         <div className={styles.mobileMenuFooter}>
-          <Button href={`/${locale}/kontak`} variant="primary" fullWidth onClick={() => setIsMobileMenuOpen(false)}>
+          <Button href={`/${locale}/komunitas`} variant="primary" fullWidth onClick={() => setIsMobileMenuOpen(false)}>
             {dict.nav.cta}
           </Button>
         </div>
